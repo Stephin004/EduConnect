@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduConnect | Register</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">EduConnect</a>
+      <nav class="nav">
+        <a href="/courses.html">Courses</a>
+        <a href="/mentors.html">Mentors</a>
+        <a class="active cta" href="/register.html">Register</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" type="button">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <h1>Register for a Program</h1>
+      <p>Fill out the form below. Your registration is stored locally by the backend.</p>
+    </section>
+
+    <div class="form-card">
+      <form id="registerForm" class="form-grid">
+        <label>
+          Full name
+          <input name="fullName" autocomplete="name" required minlength="2" />
+        </label>
+
+        <label>
+          Email
+          <input name="email" type="email" autocomplete="email" required />
+        </label>
+
+        <label>
+          Program
+          <select name="program" required>
+            <option value="Web Development Fundamentals">Web Development Fundamentals</option>
+            <option value="Python for Data & Automation">Python for Data & Automation</option>
+            <option value="Cloud Essentials">Cloud Essentials</option>
+          </select>
+        </label>
+
+        <label>
+          Preferred mentor (optional)
+          <select name="mentorId" id="mentorSelect">
+            <option value="">No preference</option>
+          </select>
+        </label>
+
+        <div class="form-actions">
+          <button class="button" type="submit">Submit Registration</button>
+          <a class="button button-secondary" href="/courses.html">View Courses</a>
+        </div>
+
+        <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> EduConnect</div>
+      <div class="muted">We’ll contact you after review.</div>
+    </div>
+  </footer>
+
+  <script src="/register.js"></script>
+</body>
+</html>
+

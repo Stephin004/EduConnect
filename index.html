@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduConnect | Learn with Mentors</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">EduConnect</a>
+      <nav class="nav">
+        <a href="/courses.html">Courses</a>
+        <a href="/mentors.html">Mentors</a>
+        <a href="/register.html" class="cta">Register</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" type="button">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Build skills. Join programs. Grow with mentors.</h1>
+          <p class="lead">EduConnect helps learners discover courses, meet mentors, and register for programs—fast and simple.</p>
+          <div class="hero-actions">
+            <a class="button" href="/courses.html">Explore Courses</a>
+            <a class="button button-secondary" href="/register.html">Register Now</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Highlights">
+          <div class="stat">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Featured Courses</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Mentors</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">1</div>
+            <div class="stat-label">Registration API</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-head">
+        <h2>Popular Programs</h2>
+        <p>Choose a program and register in minutes.</p>
+      </div>
+
+      <div class="container grid-cards" id="coursesGrid">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> EduConnect</div>
+      <div class="muted">Built for responsive learning & mentor support.</div>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
+
